@@ -45,32 +45,32 @@ const REPORT = {
         { skill: 'Production-level Redis management', severity: 'low' },
     ],
     preparationPlan: [
-        { day: 1, focus: 'Node.js Internals & Streams', tasks: ['Deep dive into the Event Loop phases and process.nextTick vs setImmediate.', 'Practice implementing Node.js Streams for handling large data sets.'] },
-        { day: 2, focus: 'Advanced MongoDB & Indexing', tasks: ['Study Compound Indexes, TTL Indexes, and Text Indexes.', 'Practice writing complex Aggregation pipelines and using the .explain(\'executionStats\') method.'] },
-        { day: 3, focus: 'Caching & Redis Strategies', tasks: ['Read about Redis data types beyond strings (Sets, Hashes, Sorted Sets).', 'Implement a Redis-based rate limiter or a caching layer for a sample API.'] },
-        { day: 4, focus: 'System Design & Microservices', tasks: ['Study Microservices communication patterns (Synchronous vs Asynchronous).', 'Learn about the API Gateway pattern and Circuit Breakers.'] },
-        { day: 5, focus: 'Message Queues & DevOps Basics', tasks: ['Watch introductory tutorials on RabbitMQ or Kafka.', 'Dockerize a project and write a simple GitHub Actions workflow for CI.'] },
-        { day: 6, focus: 'Data Structures & Algorithms', tasks: ['Solve 5-10 Medium LeetCode problems focusing on Arrays, Strings, and Hash Maps.', 'Review common sorting and searching algorithms.'] },
-        { day: 7, focus: 'Mock Interview & Project Review', tasks: ['Conduct a mock interview focusing on explaining the Real-time Chat Application architecture.', 'Prepare concise summaries for all work experience bullets.'] },
+        { day: 1, focus: 'Node.js Internals & Streams', tasks: [ 'Deep dive into the Event Loop phases and process.nextTick vs setImmediate.', 'Practice implementing Node.js Streams for handling large data sets.' ] },
+        { day: 2, focus: 'Advanced MongoDB & Indexing', tasks: [ 'Study Compound Indexes, TTL Indexes, and Text Indexes.', 'Practice writing complex Aggregation pipelines and using the .explain(\'executionStats\') method.' ] },
+        { day: 3, focus: 'Caching & Redis Strategies', tasks: [ 'Read about Redis data types beyond strings (Sets, Hashes, Sorted Sets).', 'Implement a Redis-based rate limiter or a caching layer for a sample API.' ] },
+        { day: 4, focus: 'System Design & Microservices', tasks: [ 'Study Microservices communication patterns (Synchronous vs Asynchronous).', 'Learn about the API Gateway pattern and Circuit Breakers.' ] },
+        { day: 5, focus: 'Message Queues & DevOps Basics', tasks: [ 'Watch introductory tutorials on RabbitMQ or Kafka.', 'Dockerize a project and write a simple GitHub Actions workflow for CI.' ] },
+        { day: 6, focus: 'Data Structures & Algorithms', tasks: [ 'Solve 5-10 Medium LeetCode problems focusing on Arrays, Strings, and Hash Maps.', 'Review common sorting and searching algorithms.' ] },
+        { day: 7, focus: 'Mock Interview & Project Review', tasks: [ 'Conduct a mock interview focusing on explaining the Real-time Chat Application architecture.', 'Prepare concise summaries for all work experience bullets.' ] },
     ],
 }
 
 const NAV_ITEMS = [
-    { id: 'technical', label: 'Technical Questions', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>) },
-    { id: 'behavioral', label: 'Behavioral Questions', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>) },
-    { id: 'roadmap', label: 'Road Map', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>) },
+    { id: 'technical', label: 'Technical Questions', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>) },
+    { id: 'behavioral', label: 'Behavioral Questions', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>) },
+    { id: 'roadmap', label: 'Road Map', icon: (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>) },
 ]
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 const QuestionCard = ({ item, index }) => {
-    const [open, setOpen] = useState(false)
+    const [ open, setOpen ] = useState(false)
     return (
         <div className='q-card'>
             <div className='q-card__header' onClick={() => setOpen(o => !o)}>
                 <span className='q-card__index'>Q{index + 1}</span>
                 <p className='q-card__question'>{item.question}</p>
                 <span className={`q-card__chevron ${open ? 'q-card__chevron--open' : ''}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
                 </span>
             </div>
             {open && (
@@ -108,11 +108,11 @@ const RoadMapDay = ({ day }) => (
 
 // ── Main Component ────────────────────────────────────────────────────────────
 const Interview = () => {
-    const [activeNav, setActiveNav] = useState('technical')
+    const [ activeNav, setActiveNav ] = useState('technical')
 
     const scoreColor =
         REPORT.matchScore >= 80 ? 'score--high' :
-        REPORT.matchScore >= 60 ? 'score--mid' : 'score--low'
+            REPORT.matchScore >= 60 ? 'score--mid' : 'score--low'
 
     return (
         <div className='interview-page'>
@@ -120,17 +120,19 @@ const Interview = () => {
 
                 {/* ── Left Nav ── */}
                 <nav className='interview-nav'>
-                    <p className='interview-nav__label'>Sections</p>
-                    {NAV_ITEMS.map(item => (
-                        <button
-                            key={item.id}
-                            className={`interview-nav__item ${activeNav === item.id ? 'interview-nav__item--active' : ''}`}
-                            onClick={() => setActiveNav(item.id)}
-                        >
-                            <span className='interview-nav__icon'>{item.icon}</span>
-                            {item.label}
-                        </button>
-                    ))}
+                    <div className="nav-content">
+                        <p className='interview-nav__label'>Sections</p>
+                        {NAV_ITEMS.map(item => (
+                            <button
+                                key={item.id}
+                                className={`interview-nav__item ${activeNav === item.id ? 'interview-nav__item--active' : ''}`}
+                                onClick={() => setActiveNav(item.id)}
+                            >
+                                <span className='interview-nav__icon'>{item.icon}</span>
+                                {item.label}
+                            </button>
+                        ))}
+                    </div>
                 </nav>
 
                 <div className='interview-divider' />
