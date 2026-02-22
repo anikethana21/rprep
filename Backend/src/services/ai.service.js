@@ -27,7 +27,8 @@ const interviewReportSchema = z.object({
         day: z.number().describe("The day number in the preparation plan, starting from 1"),
         focus: z.string().describe("The main focus of this day in the preparation plan, e.g. data structures, system design, mock interviews etc."),
         tasks: z.array(z.string()).describe("List of tasks to be done on this day to follow the preparation plan, e.g. read a specific book or article, solve a set of problems, watch a video etc.")
-    })).describe("A day-wise preparation plan for the candidate to follow in order to prepare for the interview effectively")
+    })).describe("A day-wise preparation plan for the candidate to follow in order to prepare for the interview effectively"),
+    title: z.string().describe("The title of the job for which the interview report is generated"),
 })
 
 async function generateInterviewReport({ resume, selfDescription, jobDescription }) {
