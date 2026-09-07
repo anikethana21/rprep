@@ -1,16 +1,30 @@
-# React + Vite
+# ⚡ Interview AI — Frontend Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend client for **Interview AI** is built with **React 19**, **Vite 7**, and **Sass (SCSS)**, utilizing a domain-driven **Feature-Sliced Architecture** with dark/light theme support and responsive glassmorphic UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Highlights
 
-## React Compiler
+* **React 19 & Vite 7**: Blazing-fast development server with instant HMR and optimized production bundles.
+* **Feature-Sliced Architecture**: Code structured by business domain (`features/auth`, `features/interview`, `features/skills`).
+* **Design System**: Tailored SCSS tokens, glassmorphic cards, fluid status badges, and interactive dark/light theme toggle.
+* **Context & Custom Hooks**: `useInterview`, `useSkills`, and `useAuth` encapsulate API requests and reactive state.
+* **Real-Time Skill Tracker**: Interactive drawer for managing skill gaps, generating AI learning pathways, and syncing career profile data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.example .env
+
+# Run development server
+npm run dev
+```
+
+For the complete full-stack documentation, architecture diagrams, and API guides, see the [Main Project README](../README.md).
