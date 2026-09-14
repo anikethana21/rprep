@@ -10,7 +10,7 @@ const Protected = ({children}) => {
             <main className="loading-screen">
                 <div className="loading-screen__content">
                     <div className="loading-screen__ring" />
-                    <h2>iPrep</h2>
+                    <h2>rPrep</h2>
                     <p>Signing you in<span className="loading-screen__dots"><span>.</span><span>.</span><span>.</span></span></p>
                 </div>
             </main>

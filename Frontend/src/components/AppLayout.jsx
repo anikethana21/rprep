@@ -31,8 +31,8 @@ const AppLayout = ({ children }) => {
                         </svg>
                     </div>
                     <div className="mobile-topbar__brand-text">
-                        <span className="mobile-topbar__brand-name">Job<span className="mobile-topbar__brand-accent">Stand</span></span>
-                        <span className="mobile-topbar__brand-slogan">Your career, elevated.</span>
+                        <span className="mobile-topbar__brand-name">r<span className="mobile-topbar__brand-accent">Prep</span></span>
+                        <span className="mobile-topbar__brand-slogan">Resume preparation, simplified.</span>
                     </div>
                 </div>
                 <div className="mobile-topbar__spacer" />
