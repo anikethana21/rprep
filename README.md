@@ -8,6 +8,14 @@ Turn any job description and resume into a high-precision preparation battle pla
 
 <br/>
 
+<br/>
+
+[![Live App](https://img.shields.io/badge/Live_App-rprep--ai.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rprep-ai.vercel.app)
+[![Live API](https://img.shields.io/badge/Live_API-rprep--api.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rprep-api.vercel.app)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-rprep-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anikethana21/rprep)
+
+<br/>
+
 [![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Node.js](https://img.shields.io/badge/Node.js-v20+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
@@ -19,6 +27,7 @@ Turn any job description and resume into a high-precision preparation battle pla
 
 <br/>
 
+[🌐 Live Demo](https://rprep-ai.vercel.app) •
 [✨ Features](#-core-features) •
 [📐 Architecture](#-system-architecture) •
 [🔄 User Workflow](#-interactive-user-workflow) •
@@ -272,8 +281,8 @@ Follow these steps to run rPrep locally in under 3 minutes.
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/anikethana2109-maker/interview-ai.git
-cd interview-ai
+git clone https://github.com/anikethana21/rprep.git
+cd rprep
 ```
 
 ---
@@ -293,7 +302,7 @@ cp .env.example .env
 Populate the values inside `Backend/.env`:
 ```env
 PORT=3000
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/interview-ai?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/rprep?retryWrites=true&w=majority
 JWT_SECRET=your_super_secret_jwt_key_here
 GOOGLE_GENAI_API_KEY=your_google_gemini_api_key_here
 ```
@@ -445,7 +454,7 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more informa
 
 <div align="center">
 
-Made with ❤️ by [Anikethana](https://github.com/anikethana2109-maker)
+Made with ❤️ by [Anikethana](https://github.com/anikethana21)
 
 *If rPrep helps you crack your dream job, give it a ⭐ on GitHub!*
 
