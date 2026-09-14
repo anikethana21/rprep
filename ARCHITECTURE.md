@@ -1,6 +1,6 @@
 # Full-Stack AI Application Architecture Guide
 
-A comprehensive architectural reference guide based on the **Interview AI** codebase. Use this document as a blueprint and design standard for building scalable full-stack GenAI web applications.
+A comprehensive architectural reference guide based on the **rPrep** codebase. Use this document as a blueprint and design standard for building scalable full-stack GenAI web applications.
 
 ---
 

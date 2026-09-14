@@ -1,6 +1,6 @@
-# ⚡ Interview AI — Frontend Client
+# ⚡ rPrep — Frontend Client
 
-The frontend client for **Interview AI** is built with **React 19**, **Vite 7**, and **Sass (SCSS)**, utilizing a domain-driven **Feature-Sliced Architecture** with dark/light theme support and responsive glassmorphic UI.
+The frontend client for **rPrep** is built with **React 19**, **Vite 7**, and **Sass (SCSS)**, utilizing a domain-driven **Feature-Sliced Architecture** with dark/light theme support and responsive glassmorphic UI.
 
 ---
 
