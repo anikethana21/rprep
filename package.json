@@ -1,5 +1,5 @@
 {
-  "name": "interview-ai-backend-root",
+  "name": "rprep",
   "version": "1.0.0",
   "main": "Backend/src/app.js",
   "scripts": {

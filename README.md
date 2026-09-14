@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Interview AI
+# ⚡ rPrep (Resume Preparation & Interview Co-Pilot)
 
 ### *Your Intelligent Career Co-Pilot & GenAI Interview Mastery Platform*
 
@@ -32,7 +32,7 @@ Turn any job description and resume into a high-precision preparation battle pla
 
 </div>
 
-## 💡 Why Interview AI?
+## 💡 Why rPrep?
 
 Traditional interview preparation is broken:
 * ❌ **Generic LeetCode / Question Banks**: You spend weeks memorizing arbitrary problems that recruiters for your target position will never ask.
@@ -40,13 +40,13 @@ Traditional interview preparation is broken:
 * ❌ **Unstructured Last-Minute Cramming**: Preparing without a roadmap leads to burnout, stress, and poor retention.
 * ❌ **Generic Resumes**: ATS (Applicant Tracking Systems) filter out candidates whose resumes lack keywords matching the specific job role.
 
-**Interview AI changes the game.** By analyzing your real resume against the exact target job description using Google Gemini multimodal intelligence, it generates a custom-tailored preparation blueprint with question intentions, a day-by-day sprint roadmap, a live skill tracker, and an ATS-optimized resume.
+**rPrep changes the game.** By analyzing your real resume against the exact target job description using Google Gemini multimodal intelligence, it generates a custom-tailored preparation blueprint with question intentions, a day-by-day sprint roadmap, a live skill tracker, and an ATS-optimized resume.
 
 <br/>
 
-### 📊 Traditional Prep vs. Interview AI
+### 📊 Traditional Prep vs. rPrep
 
-| Capability | Traditional Prep | ⚡ Interview AI |
+| Capability | Traditional Prep | ⚡ rPrep |
 | :--- | :---: | :---: |
 | **Match Analysis** | Gut feeling / guesswork | **0–100% Precision Match Rating** |
 | **Question Relevance** | Generic public question lists | **Role & Experience-Tailored Q&A** |
@@ -102,7 +102,7 @@ Traditional interview preparation is broken:
 
 ## 📐 System Architecture
 
-Interview AI is built on a **Decoupled Client-Server Monorepo Architecture** designed for high throughput, maintainability, and rapid AI streaming.
+rPrep is built on a **Decoupled Client-Server Monorepo Architecture** designed for high throughput, maintainability, and rapid AI streaming.
 
 ```mermaid
 flowchart TD
@@ -261,7 +261,7 @@ interview-ai/
 
 ## ⚡ Quick Start Guide
 
-Follow these steps to run Interview AI locally in under 3 minutes.
+Follow these steps to run rPrep locally in under 3 minutes.
 
 ### 📋 Prerequisites
 * **Node.js**: v18.0.0 or higher ([Download](https://nodejs.org/))
@@ -333,7 +333,7 @@ npm run dev
 # Frontend will be live on http://localhost:5173
 ```
 
-Visit **`http://localhost:5173`** in your browser, create an account, and experience Interview AI! 🎉
+Visit **`http://localhost:5173`** in your browser, create an account, and experience rPrep! 🎉
 
 ---
 
@@ -447,6 +447,6 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more informa
 
 Made with ❤️ by [Anikethana](https://github.com/anikethana2109-maker)
 
-*If Interview AI helps you crack your dream job, give it a ⭐ on GitHub!*
+*If rPrep helps you crack your dream job, give it a ⭐ on GitHub!*
 
 </div>
